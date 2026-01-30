@@ -2,14 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primer repo</title>
+  <title>Almohadas Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hola GitHub 🚀</h1>
-  <button id="btn">Click</button>
+<section class="hero">
+  <h1>Dormí bien. Despertá sin dolor.</h1>
+  <p>Almohadas premium diseñadas para tu forma de dormir.</p>
+  <a href="#productos" class="cta">Elegir mi almohada</a>
+</section>
 
-  <script src="script.js"></script>
+<section class="beneficios">
+  <h2>¿Por qué cambiar tu almohada?</h2>
+  <ul>
+    <li>✔ Menos dolor cervical</li>
+    <li>✔ Mejor postura al dormir</li>
+    <li>✔ Sueño profundo y reparador</li>
+  </ul>
+</section>
+
+<section id="productos" class="productos">
+  <h2>Elegí tu almohada ideal</h2>
+
+  <div class="card">
+    <h3>Soft</h3>
+    <p>Ideal para dormir boca arriba. Suave y adaptable.</p>
+    <button onclick="comprar('Soft')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>Firme</h3>
+    <p>Perfecta para dormir de costado. Soporte estable.</p>
+    <button onclick="comprar('Firme')">Comprar</button>
+  </div>
+
+  <div class="card destacado">
+    <h3>Memory Premium</h3>
+    <p>Alivio cervical. Máximo confort.</p>
+    <button onclick="comprar('Memory Premium')">Comprar</button>
+  </div>
+
+</section>
+
+<section class="confianza">
+  <p>⭐ +1.200 personas durmiendo mejor</p>
+  <p>Garantía de satisfacción 30 días</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
+

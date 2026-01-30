@@ -1,12 +1,6 @@
-body {
-  background: #111;
-  color: white;
-  font-family: Arial;
-  text-align: center;
-  padding-top: 50px;
+function comprar(modelo) {
+  const mensaje = `Hola! Quiero comprar la almohada ${modelo}`;
+  const numero = "54911XXXXXXXX";
+  window.location.href = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 }
 
-button {
-  padding: 10px 20px;
-  cursor: pointer;
-}

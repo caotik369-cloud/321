@@ -1,3 +1,49 @@
-document.getElementById("btn").onclick = () => {
-  alert("Funciona 😎");
-};
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e293b, #020617);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #22c55e;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.destacado {
+  border: 2px solid #22c55e;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
