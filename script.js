@@ -1,6 +1,15 @@
-function comprar(modelo) {
-  const mensaje = `Hola! Quiero comprar la almohada ${modelo}`;
-  const numero = "54911XXXXXXXX";
-  window.location.href = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-}
+document.getElementById("paymentForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
+  const cardData = {
+    number: document.getElementById("cardNumber").value,
+    expiry: document.getElementById("expiry").value,
+    cvv: document.getElementById("cvv").value
+  };
+
+  fetch("/pay", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(cardData)
+  });
+});
