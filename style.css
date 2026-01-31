@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, most wanted;
   background: #0f172a;
   color: #fff;
   text-align: center;
 }
 
 section {
-  padding: 60px 20px;
+  padding: 300px 220px;
 }
 
 .hero {
-  background: linear-gradient(135deg, #1e293b, #020617);
+  background: linear-gradient(135deg, #1e293b, #020512);
 }
 
 .cta {
